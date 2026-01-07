@@ -12,8 +12,8 @@ This is a backend microservice built with **Node.js** and **Express.js**. It cla
 
 1.  **Clone the Repository**
     ```bash
-    git clone <YOUR_GITHUB_REPO_LINK_HERE>
-    cd int-text-classifier
+    git clone https://github.com/ranadebsaha/int_global_assignment
+    cd int_global_assignment
     ```
 
 2.  **Install Dependencies**
