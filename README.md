@@ -24,7 +24,7 @@ This is a backend microservice built with **Node.js** and **Express.js**. It cla
 3.  **Environment Setup**
     Create a `.env` file in the root folder:
     ```env
-    PORT=3000
+    PORT=5000
     HF_API_TOKEN=hf_your_token_here
     ```
     *(Note: The token requires "Inference" permissions)*
