@@ -4,9 +4,9 @@
 This is a backend microservice built with **Node.js** and **Express.js**. It classifies customer input text into categories (Complaint, Query, Feedback, Other) using the **Hugging Face Inference API**.
 
 ## Tech Stack
-* [cite_start]**Framework:** Node.js (Express.js) [cite: 12]
+* **Framework:** Node.js (Express.js)
 * **AI Provider:** Hugging Face (Zero-Shot Classification)
-* [cite_start]**Architecture:** Controller-Service Pattern [cite: 13]
+* **Architecture:** Controller-Service Pattern
 
 ## Setup Instructions
 
@@ -36,24 +36,22 @@ This is a backend microservice built with **Node.js** and **Express.js**. It cla
 
 ## API Usage
 
-[cite_start]**Endpoint:** `POST /api/classify` [cite: 7]
+**Endpoint:** `POST /api/classify`
 
 **Request Body:**
 ```json
 {
   "text": "The login page keeps giving me a 500 error."
 }
-
-Response:
+```
+**Response:**
+```json
 {
   "category": "Complaint",
   "confidence": 0.92,
   "metadata": "Powered by Hugging Face"
 }
+```
 
-How AI Was Used
-
+**How AI Was Used**
 I utilized the Hugging Face Inference API with the facebook/bart-large-mnli model. This model utilizes Zero-Shot Classification, which allows the API to categorize text into the required labels (Complaint, Query, Feedback, Other) without needing custom training data. The service sends the user text and these candidate labels to the model, which returns the most probable category and a confidence score.
-
-
----
